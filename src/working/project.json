@@ -1,0 +1,718 @@
+{
+  "Version": "1.0.0",
+  "Name": "perlin",
+  "God": "123456",
+  "DefaultLevel": "NewLevel",
+  "Levels": [
+    {
+      "Version": "3",
+      "Name": "NewLevel",
+      "LevelID": "None",
+      "CustomData": {
+        "MWSysWorldSetting": {
+          "Gravity": -1600,
+          "SkillCountDown": 0,
+          "CampCount": 1,
+          "CampPlayerCount": 1,
+          "PlayerRelation": 0,
+          "bJoinInHalfWay": false,
+          "CullDistances": [
+            {
+              "X": 0,
+              "Y": 2500
+            },
+            {
+              "X": 128,
+              "Y": 3968
+            },
+            {
+              "X": 256,
+              "Y": 6300
+            },
+            {
+              "X": 512,
+              "Y": 10000
+            },
+            {
+              "X": 1024,
+              "Y": 15874
+            },
+            {
+              "X": 2048,
+              "Y": 25198
+            },
+            {
+              "X": 4096,
+              "Y": 40000
+            },
+            {
+              "X": 8192,
+              "Y": 63496
+            },
+            {
+              "X": 16384,
+              "Y": 100794
+            },
+            {
+              "X": 32768,
+              "Y": 160000
+            },
+            {
+              "X": 65536,
+              "Y": 253948
+            },
+            {
+              "X": 131072,
+              "Y": 403175
+            },
+            {
+              "X": 262144,
+              "Y": 640000
+            },
+            {
+              "X": 1000000,
+              "Y": 0
+            }
+          ]
+        }
+      },
+      "Scene": [
+        {
+          "Guid": "16E7CE744CA5B0C809D6E0A6ACBA0F7D",
+          "Name": "BP_MWSysSkyBox",
+          "Tag": "",
+          "RootComponent": {
+            "Transform": {
+              "Position": {
+                "X": 1525.719970703125,
+                "Y": 457.3900146484375,
+                "Z": -238.5
+              },
+              "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+              },
+              "Scale": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+              },
+              "EulerRotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            }
+          },
+          "Visible": 1,
+          "Collision": 1,
+          "Asset": "14971",
+          "ActorFlag": 4,
+          "ActorLevel": -1,
+          "SourceType": "BP_MWSysSkyBox",
+          "NetCullingDistance": 225000000,
+          "AlwaysRelevant": false,
+          "MWStaticStatus": false,
+          "MWNetStatus": 2,
+          "ParentGuid": "",
+          "PrefabStatus": 0,
+          "DestroyTimer": 0,
+          "Skybox Preset": 0,
+          "Skybox Texture": "14304",
+          "Skybox brightness": 1,
+          "Skybox color": {
+            "R": 1,
+            "G": 1,
+            "B": 1,
+            "A": 1
+          },
+          "Confirm to enable gradient effect": true,
+          "Skybox color at top layer": {
+            "R": 0.010329999960958958,
+            "G": 0.09084200114011765,
+            "B": 0.26225098967552185,
+            "A": 1
+          },
+          "Skybox color at upper layer": {
+            "R": 0.1274379938840866,
+            "G": 0.44520100951194763,
+            "B": 0.577580988407135,
+            "A": 1
+          },
+          "Skybox color at bottom layer": {
+            "R": 0.8227859735488892,
+            "G": 0.5972020030021667,
+            "B": 0.46778398752212524,
+            "A": 1
+          },
+          "Faded horizon": 5,
+          "Confirm to enable stars": true,
+          "Star texture": "14307",
+          "Star brightness": 0.20000000298023224,
+          "Star density": 10,
+          "Confirm to enable sun": false,
+          "Sun Texture": "14309",
+          "Sun brightness": 1,
+          "Sun color": {
+            "R": 0.04394499957561493,
+            "G": 0.1782110035419464,
+            "B": 0.5625,
+            "A": 1
+          },
+          "Sun size": 10,
+          "Confirm to enable moon": false,
+          "Moon texture": "",
+          "Moon brightness": 1,
+          "Moon color": {
+            "R": 1,
+            "G": 1,
+            "B": 1,
+            "A": 1
+          },
+          "Moon size": 10,
+          "Confirm to enable cloud": true,
+          "Cloud texture": "28450",
+          "Cloud transparency": 0.25,
+          "Cloud color": {
+            "R": 0.623960018157959,
+            "G": 0.6866850256919861,
+            "B": 1,
+            "A": 1
+          },
+          "Cloud density": 1,
+          "Cloud speed": 0.5,
+          "Children": []
+        },
+        {
+          "Guid": "292D8EA548C4DCB39CC1488F37A3E28D",
+          "Name": "BP_SkyLight",
+          "Tag": "",
+          "RootComponent": {
+            "Transform": {
+              "Position": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              },
+              "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+              },
+              "Scale": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+              },
+              "EulerRotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            }
+          },
+          "Visible": 1,
+          "Collision": 1,
+          "Asset": "110",
+          "ActorFlag": 4,
+          "ActorLevel": -1,
+          "SourceType": "BP_SkyLight",
+          "NetCullingDistance": 225000000,
+          "AlwaysRelevant": false,
+          "MWStaticStatus": false,
+          "MWNetStatus": 2,
+          "ParentGuid": "",
+          "PrefabStatus": 0,
+          "DestroyTimer": 0,
+          "IntensityScale": 4,
+          "LightColor": {
+            "R": 0.7083759903907776,
+            "G": 0.7605249881744385,
+            "B": 1,
+            "A": 0
+          },
+          "bRealTimeCapture": true,
+          "SkyLightSourceType": 0,
+          "CubemapResolution": 128,
+          "HDRCubeMap": "",
+          "Children": []
+        },
+        {
+          "Guid": "CFA529A84601D21E4C15F9B4A61D0A46",
+          "Name": "BP_DirectionalLight",
+          "Tag": "",
+          "RootComponent": {
+            "Transform": {
+              "Position": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              },
+              "Rotation": {
+                "X": -0.059391144663095474,
+                "Y": 0.33682408928871155,
+                "Z": 0.16317583620548248,
+                "W": 0.9254165887832642
+              },
+              "Scale": {
+                "X": 2.5,
+                "Y": 2.5,
+                "Z": 2.5
+              },
+              "EulerRotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            }
+          },
+          "Visible": 1,
+          "Collision": 1,
+          "Asset": "8444",
+          "ActorFlag": 4,
+          "ActorLevel": -1,
+          "SourceType": "BP_DirectionalLight",
+          "NetCullingDistance": 225000000,
+          "AlwaysRelevant": false,
+          "MWStaticStatus": false,
+          "MWNetStatus": 2,
+          "ParentGuid": "",
+          "PrefabStatus": 0,
+          "DestroyTimer": 0,
+          "Angle of Orientation": 20,
+          "Pitch angle": -40,
+          "Intensity": 2,
+          "LightColor": {
+            "R": 1,
+            "G": 1,
+            "B": 1,
+            "A": 0
+          },
+          "CastShadows": true,
+          "ShadowDistance": 1500,
+          "UseTemperature": true,
+          "Temperature": 3500,
+          "Children": []
+        },
+        {
+          "Guid": "45D22C5C4B54662D88073FBA04172411",
+          "Name": "SM_Ground",
+          "Tag": "",
+          "RootComponent": {
+            "Transform": {
+              "Position": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              },
+              "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+              },
+              "Scale": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+              },
+              "EulerRotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            }
+          },
+          "Visible": 1,
+          "Collision": 1,
+          "Asset": "2594",
+          "ActorFlag": 87,
+          "ActorLevel": 0,
+          "SourceType": "Static Mesh",
+          "NetCullingDistance": 225000000,
+          "AlwaysRelevant": false,
+          "MWStaticStatus": true,
+          "MWNetStatus": 2,
+          "ParentGuid": "",
+          "PrefabStatus": 0,
+          "DestroyTimer": 0,
+          "StaticMesh": {
+            "Asset": "1319",
+            "ExtendScale": {
+              "X": 17500,
+              "Y": 17500,
+              "Z": 0.00009999999747378752
+            },
+            "ExtendOrigin": {
+              "X": 0,
+              "Y": 0,
+              "Z": 1.1732481652870774e-8
+            },
+            "Materials": {
+              "0": "53342"
+            }
+          },
+          "SimulatePhysics": false,
+          "EnableMass": false,
+          "MassInKg": 100,
+          "LinerDamping": 0.0010000000474974513,
+          "AngularDamping": 0,
+          "EnableGravity": true,
+          "LockPositionX": false,
+          "LockPositionY": false,
+          "LockPositionZ": false,
+          "LockRotationX": false,
+          "LockRotationY": false,
+          "LockRotationZ": false,
+          "IgnoreRadialImpulse": false,
+          "IgnoreRadialForce": false,
+          "ApplyImpulseOnDamage": false,
+          "UseSmoothSync": false,
+          "Children": []
+        },
+        {
+          "Guid": "D6A0C75E4EC14AB7761063A43EBD26A6",
+          "Name": "BP_PlayerStart",
+          "Tag": "",
+          "RootComponent": {
+            "Transform": {
+              "Position": {
+                "X": 0,
+                "Y": 0,
+                "Z": 130
+              },
+              "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+              },
+              "Scale": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+              },
+              "EulerRotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            }
+          },
+          "Visible": 1,
+          "Collision": 1,
+          "Asset": "109",
+          "ActorFlag": 71,
+          "ActorLevel": 0,
+          "SourceType": "逻辑对象/逻辑对象/游戏功能对象/gameplay objects/BP_PlayerStart",
+          "NetCullingDistance": 225000000,
+          "AlwaysRelevant": false,
+          "MWStaticStatus": true,
+          "MWNetStatus": 2,
+          "ParentGuid": "",
+          "PrefabStatus": 0,
+          "DestroyTimer": 0,
+          "Children": []
+        },
+        {
+          "Guid": "E2AC3F3B4648B212CC0DFAA488BD0DBA",
+          "Name": "Camera",
+          "Tag": "",
+          "RootComponent": {
+            "Transform": {
+              "Position": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              },
+              "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+              },
+              "Scale": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+              },
+              "EulerRotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            }
+          },
+          "Visible": 0,
+          "Collision": 0,
+          "Asset": "MetaWorld_JSActor",
+          "Script": {
+            "PreloadAssets": "11995,8099",
+            "RelativeLocation": {
+              "X": 0,
+              "Y": 0,
+              "Z": 85
+            },
+            "RelativeRotation": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "springArmRelativeLocation": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "springArmRelativeRotation": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "cameraMode": 3,
+            "bEnableRealEffect": false,
+            "cameraProjectionMode": 0,
+            "OrthoWidth": 512,
+            "OrthoNearClipPlane": 0,
+            "OrthoFarClipPlane": 2097152,
+            "TargetArmLength": 180,
+            "enableCameraLocationLag": false,
+            "cameraLocationLagSpeed": 10,
+            "enableCameraRotationLag": false,
+            "CameraRotationLagSpeed": 10,
+            "cameraFOV": 90,
+            "cameraLocationMode": 1,
+            "cameraRotationMode": 2,
+            "enableCameraCollison": true,
+            "TargetOffset": {
+              "X": 0,
+              "Y": 0,
+              "Z": -60
+            },
+            "SocketOffset": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "bFixedCameraZAxis": false,
+            "cameraUpLimitAngle": 60,
+            "cameraDownLimitAngle": 40,
+            "enableOcclusionDetection": false,
+            "enableFadeEffect": false,
+            "fadeEffectValue": 0,
+            "enableRaiseCamera": false,
+            "RaiseCameraHeight": 100
+          },
+          "ActorFlag": 87,
+          "ActorLevel": -1,
+          "SourceType": "Camera",
+          "NetCullingDistance": 225000000,
+          "AlwaysRelevant": true,
+          "MWStaticStatus": false,
+          "MWNetStatus": 2,
+          "ParentGuid": "",
+          "PrefabStatus": 0,
+          "DestroyTimer": 0,
+          "ScriptAsset": "Camera",
+          "TargetGuid": "",
+          "Children": []
+        },
+        {
+          "Guid": "49246D164DA7B3F9434D73B5241DE208",
+          "Name": "Player",
+          "Tag": "",
+          "RootComponent": {
+            "Transform": {
+              "Position": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              },
+              "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+              },
+              "Scale": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+              },
+              "EulerRotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            }
+          },
+          "Visible": 0,
+          "Collision": 0,
+          "Asset": "MetaWorld_JSActor",
+          "Script": {
+            "cameraMode": 1,
+            "clothVersionType": 2,
+            "MaxWalkSpeed": 450,
+            "MaxFlySpeed": 800,
+            "MaxSwimSpeed": 300,
+            "maxCrouchSpeed": 200,
+            "maxFallingVelocity": 2048,
+            "MaxAcceleration": 2048,
+            "MaxStepHeight": 45,
+            "walkableForAngle": 45,
+            "rotateRate": 180,
+            "maxJumpHeight": 50,
+            "JumpMaxCount": 1,
+            "CrouchHeight": 120,
+            "MoveFacingDirection": 0,
+            "MovementDirection": 2,
+            "CapsuleHalfHeight": 100,
+            "CapsuleRadius": 30,
+            "AirControl": 0.20000000298023224,
+            "AirControlBoostMultiplier": 2,
+            "AirControlBoostVelocityThreshold": 25,
+            "BrakingDecelerationFlying": 2048,
+            "bUseSeparateBrakingFriction": false,
+            "GroundFriction": 8,
+            "BrakingDecelerationWalking": 2048,
+            "BrakingDecelerationFalling": 0,
+            "BrakingDecelerationSwimming": 2048,
+            "CanCrouch": true,
+            "CanMove": true,
+            "CanJump": true,
+            "characterScale": 0.800000011920929,
+            "openOutLine": false,
+            "OutlineColor": {
+              "R": 1,
+              "G": 0,
+              "B": 0,
+              "A": 1
+            },
+            "OutlineWidth": 1,
+            "firstDragCameraVerticalSpeed": 120,
+            "thirdDragCameraHorizontalSpeed": 150,
+            "thirdDragCameraVerticalSpeed": 120,
+            "basicStance": "30274",
+            "characterEditorDataJson": "{\"realData\":\"[{\\\"apiName\\\":\\\"changeCharacter\\\",\\\"value\\\":\\\"Female_Medium\\\",\\\"saveFileType\\\":\\\"Character\\\"},{\\\"apiName\\\":\\\"setHeadMesh\\\",\\\"value\\\":\\\"22860\\\",\\\"saveFileType\\\":\\\"Character\\\"},{\\\"apiName\\\":\\\"setUpperClothMesh\\\",\\\"value\\\":\\\"22869\\\",\\\"saveFileType\\\":\\\"UpperCloth\\\"},{\\\"apiName\\\":\\\"setLowerClothMesh\\\",\\\"value\\\":\\\"22858\\\",\\\"saveFileType\\\":\\\"LowerCloth\\\"},{\\\"apiName\\\":\\\"setGlovesMesh\\\",\\\"value\\\":\\\"22849\\\",\\\"saveFileType\\\":\\\"Gloves\\\"},{\\\"apiName\\\":\\\"setShoeMesh\\\",\\\"value\\\":\\\"22850\\\",\\\"saveFileType\\\":\\\"Shoe\\\"},{\\\"apiName\\\":\\\"setFrontHairMesh\\\",\\\"value\\\":\\\"22852\\\",\\\"saveFileType\\\":\\\"Hair\\\"},{\\\"apiName\\\":\\\"setBehindHairMesh\\\",\\\"value\\\":\\\"22872\\\",\\\"saveFileType\\\":\\\"Hair\\\"}]\",\"characterType\":\"Female_Medium\",\"basicStance\":\"30274\",\"version\":\"2.0\"}",
+            "characterSlotDataJson": "MW_Skeleton#[\"Head$0,0,0|0,0,0|1,1,1\",\"Hair$0,0,0|0,0,0|1,1,1\",\"Glasses$0,0,0|0,0,0|1,1,1\",\"Eyes$0,0,0|0,0,0|1,1,1\",\"FaceOrnamental$0,0,0|0,0,0|1,1,1\",\"Mouse$0,0,0|0,0,0|1,1,1\",\"Nameplate$0,0,0|0,0,0|1,1,1\",\"Right_Head$0,0,0|0,0,0|1,1,1\",\"Left_Head$0,0,0|0,0,0|1,1,1\",\"ChatFrame$0,0,0|0,0,0|1,1,1\",\"Rings$0,0,0|0,0,0|1,1,1\",\"FirstpersonCamera$0,0,0|0,0,0|1,1,1\",\"Right_Hand$0,0,0|0,0,0|1,1,1\",\"Right_Glove$0,0,0|0,0,0|1,1,1\",\"Right_Shoulder$0,0,0|0,0,0|1,1,1\",\"Left_Hand$0,0,0|0,0,0|1,1,1\",\"Left_Glove$0,0,0|0,0,0|1,1,1\",\"Left_Shoulder$0,0,0|0,0,0|1,1,1\",\"Left_Back$0,0,0|0,0,0|1,1,1\",\"Right_Back$0,0,0|0,0,0|1,1,1\",\"BackOrnamental$0,0,0|0,0,0|1,1,1\",\"Left_Foot$0,0,0|0,0,0|1,1,1\",\"Right_Foot$0,0,0|0,0,0|1,1,1\",\"Buns$0,0,0|0,0,0|1,1,1\",\"Root$0,0,0|0,0,0|1,1,1\",\"Left_Lowerarm$0,0,0|0,0,0|1,1,1\",\"Right_Lowerarm$0,0,0|0,0,0|1,1,1\",\"Left_Thigh$0,0,0|0,0,0|1,1,1\",\"Right_Thigh$0,0,0|0,0,0|1,1,1\",\"Left_Calf$0,0,0|0,0,0|1,1,1\",\"Right_Calf$0,0,0|0,0,0|1,1,1\"]#[]"
+          },
+          "ActorFlag": 87,
+          "ActorLevel": -1,
+          "SourceType": "Player",
+          "NetCullingDistance": 225000000,
+          "AlwaysRelevant": true,
+          "MWStaticStatus": false,
+          "MWNetStatus": 2,
+          "ParentGuid": "",
+          "PrefabStatus": 0,
+          "DestroyTimer": 0,
+          "ScriptAsset": "Player",
+          "TargetGuid": "",
+          "Children": []
+        },
+        {
+          "Guid": "902173E74D19051065754289269948A8",
+          "Name": "正方体",
+          "Tag": "",
+          "RootComponent": {
+            "Transform": {
+              "Position": {
+                "X": -300.2799987792969,
+                "Y": -758.3099975585938,
+                "Z": 0
+              },
+              "Rotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0,
+                "W": 1
+              },
+              "Scale": {
+                "X": 1,
+                "Y": 1,
+                "Z": 1
+              },
+              "EulerRotation": {
+                "X": 0,
+                "Y": 0,
+                "Z": 0
+              }
+            }
+          },
+          "Visible": 0,
+          "Collision": 1,
+          "Asset": "7669",
+          "ActorFlag": 71,
+          "ActorLevel": 0,
+          "SourceType": "资源对象/基础模型/静态模型/Static Mesh/SM_Shape_Cube.uasset.json",
+          "NetCullingDistance": 225000000,
+          "AlwaysRelevant": false,
+          "MWStaticStatus": true,
+          "MWNetStatus": 2,
+          "ParentGuid": "",
+          "PrefabStatus": 0,
+          "DestroyTimer": 0,
+          "StaticMesh": {
+            "Asset": "7668",
+            "ExtendScale": {
+              "X": 50,
+              "Y": 50.00000762939453,
+              "Z": 50.00000762939453
+            },
+            "ExtendOrigin": {
+              "X": 0,
+              "Y": 0,
+              "Z": 49.99999237060547
+            },
+            "Materials": {
+              "0": "7735"
+            }
+          },
+          "SimulatePhysics": false,
+          "EnableMass": false,
+          "MassInKg": 100,
+          "LinerDamping": 0.0010000000474974513,
+          "AngularDamping": 0,
+          "EnableGravity": true,
+          "LockPositionX": false,
+          "LockPositionY": false,
+          "LockPositionZ": false,
+          "LockRotationX": false,
+          "LockRotationY": false,
+          "LockRotationZ": false,
+          "IgnoreRadialImpulse": false,
+          "IgnoreRadialForce": false,
+          "ApplyImpulseOnDamage": false,
+          "UseSmoothSync": false,
+          "Children": []
+        }
+      ],
+      "PreloadAssets": [],
+      "Assets": [
+        "14304",
+        "14307",
+        "14309",
+        "28450",
+        "2594",
+        "7669",
+        "109",
+        "32677",
+        "14971",
+        "8444",
+        "64154",
+        "110",
+        "117",
+        "1319",
+        "53342",
+        "53340",
+        "7668",
+        "7735",
+        "1350",
+        "11995",
+        "8099"
+      ]
+    }
+  ]
+}
